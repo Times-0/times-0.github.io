@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introduction > Mediaserver | Docs</title>
+	<link rel="shortcut icon" type="image/png" href="https://png.pngtree.com/element_origin_min_pic/17/08/24/5e79760653875de13fcac246d4a0098d.jpg"/>
+
+	<link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+	<script src="/semantic/dist/semantic.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/semantic/dist/themes/material/theme.css">
+	<style type="text/css">
+
+	    .hidden.menu {
+	      display: none;
+	    }
+
+	    .masthead .logo.item img {
+	      margin-right: 1em;
+	    }
+	    .masthead .ui.menu .ui.button {
+	      margin-left: 0.5em;
+	    }
+	    .masthead h1.ui.header {
+	      margin-top: 3em;
+	      margin-bottom: 0em;
+	      font-size: 4em;
+	      font-weight: normal;
+	    }
+	    .masthead h2 {
+	      font-size: 1.7em;
+	      font-weight: normal;
+	    }
+
+	    .ui.vertical.stripe {
+	      padding: 8em 0em;
+	    }
+	    .ui.vertical.stripe h3 {
+	      font-size: 2em;
+	    }
+	    .ui.vertical.stripe .button + h3,
+	    .ui.vertical.stripe p + h3 {
+	      margin-top: 3em;
+	    }
+	    .ui.vertical.stripe .floated.image {
+	      clear: both;
+	    }
+	    .ui.vertical.stripe p {
+	      font-size: 1.33em;
+	    }
+	    .ui.vertical.stripe .horizontal.divider {
+	      margin: 3em 0em;
+	    }
+
+	    .quote.stripe.segment {
+	      padding: 0em;
+	    }
+	    .quote.stripe.segment .grid .column {
+	      padding-top: 5em;
+	      padding-bottom: 5em;
+	    }
+
+	    .footer.segment {
+	      padding: 5em 0em;
+	    }
+
+	    .secondary.pointing.menu .toc.item {
+	      display: none;
+	    }
+
+	    @media only screen and (max-width: 700px) {
+	      .ui.fixed.menu {
+	        display: none !important;
+	      }
+	      .secondary.pointing.menu .item,
+	      .secondary.pointing.menu .menu {
+	        display: none;
+	      }
+	      .secondary.pointing.menu .toc.item {
+	        display: block;
+	      }
+	      .masthead h1.ui.header {
+	        font-size: 2em;
+	        margin-top: 1.5em;
+	      }
+	      .masthead h2 {
+	        margin-top: 0.5em;
+	        font-size: 1.5em;
+	      }
+	    }
+
+	    .overlay-menu-lazy {
+		  background-color: #FFFFFF;
+		  padding: 0em;
+		  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+		  transition: all 0.5s ease;
+		  background: transparent;
+		}
+		/* change style */
+		.fixed.overlay-menu-lazy {
+		  position: fixed;
+		  padding: 1em;
+		  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+		}
+		.head-sticky {
+			z-index: 1002 !important;
+		}
+
+
+	  </style>
+</head>
+<body class="blue">
+	<div class="pusher">
+		<div class="ui masthead center aligned vertical segment inverted blue">
+			<div class="ui container" style="z-index: 1000;">
+				<div class="ui fixed large menu overlay-menu-lazy inverted blue" style="z-index: 1001">
+					<div class="ui item">
+						<div class="ui large breadcrumb">
+							<div class="ui active label large">Timeline</div><i class="right angle icon divider"></i>
+							<div class="ui active inverted button" href="/docs"><i class="book icon"></i> Docs</div>
+							<i class="right angle icon divider"></i>
+							<div class="active section">Introduction</div>					
+						</div>
+					</div>
+
+				  <div class="right item">
+				  	<a class="ui primary inverted button active" href="/"><i class="home icon"></i> Home</a>
+				  </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ui modal timeline-download">
+		  <i class="close icon"></i>
+		  <div class="header">
+		    <i class="rocket large icon"></i> Awwwsomeee!
+		  </div>
+		  <div class="ui bottom attached success message">
+		  		<div class="header">Your download will start in a <b>jist!</b></div>
+			  	<p> Download not started? <a href="https://github.com/Times-0/Timeline/archive/master.zip">Click here</a> to try again.</p>
+			</div>
+		  <div class="image content">
+		    <div class="ui medium image">
+		      <img src="/img/yay.jpg">
+		    </div>
+		    <div class="description">
+		      <div class="ui header">You are ONE-STEP CLOSER to experiencing THE SWEETEST <b>Source</b>.</div>
+		      <p>After downloading the source-files, you must complete some requirements and <i>setup-some cherries</i> :~). Once all set, you are ready to <b>FIRE</b> </p>
+		      <br>
+		      <p>Click the button below to go to the <b>Docs</b> and find out how to <b>setup Timeline</b> with <b>EEZZZZ!</b></p>
+		    </div>
+		  </div>
+		  <div class="ui actions segment inverted blue">
+		    <a class="ui right labeled icon button docs-button inverted" href="/docs">
+		      Let's GO!
+		      <i class="rocket icon"></i>
+		    </a>
+		  </div>
+		</div>
+
+		<div class="main ui stripe vertical container segment master-thread">
+			<div class="ui right rail grid">
+				<div class="ui column computer only">
+			<div class="ui sticky master-sticky"><h4 class="ui header">Introduction</h4>
+				<div class="ui vertical following fluid accordion text menu"><div class="item">
+					<a class="title"><i class="dropdown icon"></i> <b>Getting Started</b></a>
+					<div class="content menu">
+						<a class="item" href="/docs/#Installation">Installation</a>
+						<a class="item" href="/docs/#Usage">Usage</a>
+					</div>
+				</div>
+				<div class="active item">
+					<div class="active title"><i class="dropdown icon"></i> <b>Mediaserver</b></div>
+					<div class="active content menu">
+						<a class="active item" href="#General">General</a>
+						<a class="item" href="#AS3">AS3</a>
+						<a class="item" href="#AS2">AS2</a>
+						<a class="item" href="#Friends">Friends</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="title"><i class="dropdown icon"></i> <b>Register &amp; Login</b></div>
+					<div class="content menu">
+						<a class="item" href="/docs/register-login.html#Setup">Setup</a>
+						<a class="item" href="/docs/register-login.html#Installation">Installation</a>
+						<a class="item" href="/docs/register-login.html#Usage">Usage</a>
+					</div>
+				</div>
+			</div>
+			</div> </div>
+			</div>
+
+		<div class="ui basic segment container" id="General">
+  		<h2 class="ui dividing header section-beg">General <span class="ui label green"><i class="check icon"></i> Autism-free</span><a class="anchor" id="types"></a></h2>
+			<div class="ui raised segment blue" style="font-weight: 300;">
+				<div class="ui header">Note</div>
+			  <p>This is a generic procedure you must follow for both AS2 &amp; AS3 based CPPS Client. It's <b>mandatory</b> you choose and install any one of <a class="ui label blue inverted" href="#AS2">AS2</a> or <a class="ui label blue inverted" href="#AS3">AS3</a> before visting here. :~)</p>
+			</div>
+			<div class="ui bottom attached warning message" style="top: -15px;">
+			  <i class="lightbulb outline icon"></i>
+			  This is an autism-free zone. That insist, you know what you are doing and have already realized the existence of Google.
+			</div>
+
+			<div class="ui secondary segment" style="font-weight: 300;">
+				<p>Now that you have chosen a CPPS client, and downloaded it. It's time to edit domains in SWF files. <b>Download and use the SWF Tool</b> (shoutout to our friend Ben at Solero).</p>
+				<div class="ui styled fluid accordion">
+				  <div class="title">
+				    <i class="dropdown icon"></i>
+				    UNIX - Linux, Ubuntu, Debain
+				  </div>
+				  <div class="content">
+				  	<p>Run the following commands</p>
+				  	<div class="ui segment inverted grey" style="font-weight: 350;">
+				  		<i class="dollar sign icon"></i> wget "/SWFTool.py" <br>
+				  		<i class="dollar sign icon"></i> sudo python SWFTool.py
+				  	</div>
+				  	<div class="ui info message bottom attached" style="font-weight: 500;">
+				  		<i class="lightbulb outline icon"></i> Make sure you enter full path (like <label class="ui label">/var/www/public_cpps/media1</label>, for as3) when prompted
+				  	</div>
+				  	<p>Provide the information asked, and relax until it finishes.</p>
+				  	
+				  </div>
+				  <div class="title">
+				    <i class="dropdown icon"></i>
+				    Windows &amp; MacOS
+				  </div>
+				  <div class="content">
+				  	<p>Download the following .py file and place it on <span class="ui label">Desktop</span>.</p>
+				    <a href="/SWFTool.py" class="ui button inverted green">Download SWFTool.py</a>
+				    <p> Then execute the following commands</p>
+				    <div class="ui segment attached inverted grey" style="font-weight: 350; border: none; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+				  		<i class="dollar sign icon"></i> cd <b>Desktop</b> <br>
+				  		<i class="dollar sign icon"></i> python SWFTool.py
+				  	</div>
+				  	<div class="ui info message bottom attached" style="font-weight: 500;">
+				  		<i class="lightbulb outline icon"></i> Make sure you enter full path (like <label class="ui label">C:\xampp\htdocs\media1</label>, for as3) when prompted
+				  	</div>
+				  	<p>Provide the information asked, and relax until it finishes.</p>
+				  </div>
+				</div>
+				<br>
+				<p>That's a massive leap ahead, all that's left is to change host where client tries to connect.</p>
+				<p>You have to change <b>IP address</b> in <b>Crumbs</b>. You might want to use SWF ActionScript Editing tools like <a href="https://github.com/jindrapetrik/jpexs-decompiler/releases" target="_blank">JPEX FFDEC</a>, or ASV</p>
+				<p>Change the following files:</p>
+				<ol class="ui list" style="font-size: 16px;">
+				  <li value="*"> <b>AS3: </b> <label class="ui label">media1/play/v2/content/global/crumbs/global_crumbs.swf</label></li>
+				  <li value="*"> <b>AS3: </b> <label class="ui label">media1/play/v2/content/local/en/crumbs/local_crumbs.swf</label></li>
+				  <br>
+				  <li value="*"> <b>AS2: </b> <label class="ui label">media/play/v2/content/global/crumbs/global_crumbs.swf</label></li>
+				  <li value="*"> <b>AS2: </b> <label class="ui label">media/play/v2/content/local/en/crumbs/local_crumbs.swf</label></li>
+				</ol>
+
+				<p>You might want to change <label class="ui label">127.0.0.1</label> to <label class="ui label">your VPS IP Address, eg: 432.223.76.5</label></p>
+				<div class="ui styled fluid accordion">
+				  <div class="title">
+				    <i class="dropdown icon"></i>
+				    Hosting on a VPS? Click here
+				  </div>
+				  <div class="content">
+				  	<p>Hosting on a domain, requires you to edit certain domains in local mesia files.</p>
+				  	<p>First, open <label class="ui label">XAMPP\htdocs\play\index.html</label>, or <label class="ui label">/var/www/public_cpps/play/index.html</label> in a text editor.</p>
+				  	<p>Replace <label class="ui label">localhost</label> with your domain name or ip-address (eg: <b>mycpps.pw</b>)</p>
+				  	<p>Then, open - for an <b>AS3 CPPS</b> <label class="ui label">XAMPP\htdocs\media1\play\web_service\environment_data.xml</label> or <label class="ui label">/var/www/public_cpps/media1/play/web_service/environment_data.xml</label>, or for an <b>AS2 CPPS</b> - <label class="ui label">XAMPP\htdocs\media\play\web_service\environment_data.xml</label> or <label class="ui label">/var/www/public_cpps/media/play/web_service/environment_data.xml</label>, and repeat the same, change <b>localhost</b> to your domain name or ip-address</p>
+				  	<br>
+				  	<p>And now that you have those done, you might want to make sure your domain recognizes your sub-domain setup on your VPS, so, go to your <b>website/domain provider's DNS record</b> or (<b>If you are using cloudflare, go to DNS section under cloudflare management panel</b>)</p>
+				  	<p>Then, you add <b>Two <label class="ui label">CNAME</label></b> records. one for play subdomain, another for media1/media (AS3/AS2) subdomain. Make sure they look similar to this, and save the settings</p>
+				  	<img class="ui image" src="/img/dns.png">
+				  </div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="ui basic segment container" id="AS3" style="font-weight: 300;">
+			<h2 class="ui dividing header section-beg">AS3 <span class="ui label green"><i class="percent icon"></i> 100 Pure</span><a class="anchor" id="types"></a></h2>
+			<div class="ui raised segment blue" style="font-weight: 300;">
+				<div class="ui header">Media files</div>
+				<div class="content">
+			  	<div class="ui two column very relaxed grid">
+				    <div class="column">
+				    	<div class="ui header">Micro Version [30MB]</div>
+				    	<div class="content">
+				    		<p>Contains all necessary SWF files, and downloads the rest from icer when required.</p><p> <i>Note: has domain names changed to localhost</i></p>
+				    		<div class="ui styled fluid accordion">
+							  <div class="title">
+							    <i class="dropdown icon"></i>
+							    UNIX - Linux, Ubuntu, Debain
+							  </div>
+							  <div class="content">
+							  	<p>Run the following commands</p>
+							  	<div class="ui segment inverted grey" style="font-weight: 350;">
+							  		<i class="dollar sign icon"></i> wget "/AS3-Media-Micro.zip" <br>
+							  		<i class="dollar sign icon"></i> apt-get install unzip <br>
+							  		<i class="dollar sign icon"></i> unzip AS3-Media-Micro.zip -d /var/www/public_cpps/
+
+							  	</div>
+							  	
+							  </div>
+							  <div class="title">
+							    <i class="dropdown icon"></i>
+							    Windows &amp; MacOS
+							  </div>
+							  <div class="content">
+							  	<p>Download the following .zip file and extract contents in it to <span class="ui label">XAMPP/htdocs/</span> </p>
+							    <a href="/AS3-Media-Micro.zip" class="ui button inverted green">Download AS3-Media-Micro.zip</a>
+							  </div>
+							</div>
+				    		
+				    	</div>
+				    </div>
+				    <div class="column">
+				    	<div class="ui header">Full Version [4GB]</div>
+				    	<div class="content">
+				    		<p>Contains complete collection of almost all SWF present in CP before it's closure.</p><p> <i>Note: doesn't have domain names changed to localhost</i>.</p>
+				    		<div class="ui styled fluid accordion">
+							  <div class="title">
+							    <i class="dropdown icon"></i>
+							    UNIX - Linux, Ubuntu, Debain
+							  </div>
+							  <div class="content">
+							  	<p>Run the following commands</p>
+							  	<div class="ui segment inverted grey" style="font-weight: 350;">
+							  		<i class="dollar sign icon"></i> wget "https://icer.ink/.repo/vanilla/media.zip" <br>
+							  		<i class="dollar sign icon"></i> apt-get install unzip <br>
+							  		<i class="dollar sign icon"></i> unzip media.zip -d /var/www/public_cpps/
+
+							  	</div>
+							  	
+							  </div>
+							  <div class="title">
+							    <i class="dropdown icon"></i>
+							    Windows &amp; MacOS
+							  </div>
+							  <div class="content">
+							  	<p>Download the following .zip file and extract contents in it to <span class="ui label">XAMPP/htdocs/</span> </p>
+							    <a href="https://icer.ink/.repo/vanilla/media.zip" class="ui button inverted green">Download AS3-Full media zip</a>
+							  </div>
+							</div>
+				    		
+				    	</div>
+				    </div>
+				  </div>
+				  <div class="ui vertical divider">
+				    or
+				  </div>
+				</div>
+			</div>
+			<div class="row">
+					<p>Cool! Now to <b>setup sub-domains</b>. This part be a bit tricky, so stop eating any cookies</p>
+				  	<div class="ui styled fluid accordion">
+					  <div class="title">
+					    <i class="dropdown icon"></i>
+					    Nginx: UNIX - Linux, Ubuntu, Debain
+					  </div>
+					  <div class="content">
+					  	<div class="ui error message" style="font-weight: 400; font-size: 15;">
+							<i class="warning icon large left floated"></i>Below, <label class="ui label">mycpps.pw</label> is used as <b>domain name</b>, and it may vary depending on your domain name. So if your domain name is <label class="ui label">coolcpps.com</label>, use that instead. If you are running this on a <b>local system</b>, ie <b>localhost</b> use <label class="ui label">localhost</label> as domain name.
+						</div>
+					  	<p>Run the following commands</p>
+					  	<div class="ui segment inverted grey" style="font-weight: 350;">
+					  		<i class="dollar sign icon"></i> sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/<b style="color: yellow;">mycpps.pw</b> <br>
+					  		<i class="dollar sign icon"></i> sudo ln -s /etc/nginx/sites-available/mycpps.pw /etc/nginx/sites-enabled/<b style="color: yellow;">mycpps.pw</b> <br><br>
+
+					  		<i class="dollar sign icon"></i> sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/play.<b style="color: yellow;">mycpps.pw</b> <br>
+					  		<i class="dollar sign icon"></i> sudo ln -s /etc/nginx/sites-available/play.mycpps.pw /etc/nginx/sites-enabled/play.<b style="color: yellow;">mycpps.pw</b> <br><br>
+
+					  		<i class="dollar sign icon"></i> sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/media1.<b style="color: yellow;">mycpps.pw</b> <br>
+					  		<i class="dollar sign icon"></i> sudo ln -s /etc/nginx/sites-available/media1.mycpps.pw /etc/nginx/sites-enabled/media1.<b style="color: yellow;">mycpps.pw</b> <br>
+					  	</div>
+					  	<p>Now to edit each file, so that each of them corressponds to our sub-domain, and it's directory</p>
+					  	<p>You can use any text editor of your choice, I prefer nano or editing files in local-pc and then uploading it to the VPS.</p>
+					  	<p>Make sure, <label class="ui label">/etc/nginx/sites-available/mycpps.pw</label> looks similar to this</p>
+					  	<div class="ui segment inverted grey" style="font-weight: 400;">
+					  		<pre>server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+	root /var/www/public_cpps;
+	index index.html;
+	server_name <b style="color: yellow;">mycpps.pw</b>;
+}</pre>
+					  	</div>
+					  	<div class="accordion">
+						  <div class="title">
+						    <i class="dropdown icon"></i>
+						    /etc/nginx/sites-available/play.mycpps.pw
+						  </div>
+						  <div class="content">
+						  	<pre>server {
+    listen 80;
+    listen [::]:80;
+    root /var/www/public_cpps/play;
+    index index.html;
+    server_name play.<b style="color: red;">mycpps.pw</b>;
+}
+</pre>
+						  </div>
+						  <div class="title">
+						    <i class="dropdown icon"></i>
+						    /etc/nginx/sites-available/media1.mycpps.pw
+						  </div>
+						  <div class="content">
+						  	<pre>server {
+    listen 80;
+    listen [::]:80;
+    root /var/www/public_cpps/media;
+    index index.html;
+    server_name media1.<b style="color: red;">mycpps.pw</b>;
+}
+</pre>
+						  </div>
+						</div>
+					  	
+					  </div>
+					  <div class="title">
+					    <i class="dropdown icon"></i>
+					    Apache: Windows &amp; MacOS
+					  </div>
+					  <div class="content">
+					  	<div class="ui message info" style="font-weight: 500;">
+					  		<i class="warning icon"></i> Here, <label class="ui label">XAMPP\</label> refers to the directory where you installed XAMPP. Typically it would be <label class="ui label">C:\XAMPP\</label>, so for example <label class="ui label">XAMPP\htdocs</label> would become <label class="ui label">C:\XAMPP\htdocs</label>
+					  	</div>
+					  	<p>Open, <label class="ui label">XAMPP\apache\conf\extra\httpd-vhosts.conf</label> in a text editor. Go to the last line, and append these</p>
+					  	<div class="ui segment inverted grey" style="font-weight: 400;">
+<pre>
+&lt;VirtualHost *:80&gt;
+    DocumentRoot "<b style="color: yellow;">XAMPP/</b>htdocs/play"
+    ServerName play.localhost
+
+    ErrorLog "logs/play.localhost"
+    CustomLog "logs/play.localhost" common
+&lt;/VirtualHost&gt;
+
+&lt;VirtualHost *:80&gt;
+    DocumentRoot "<b style="color: yellow;">XAMPP/</b>htdocs/media1"
+    ServerName media1.localhost
+
+    ErrorLog "logs/media1.localhost"
+    CustomLog "logs/media1.localhost" common
+&lt;/VirtualHost&gt;
+</pre>
+					  	</div>
+					  </div>
+					</div>
+				</div>
+
+			<div class="section-end"></div>
+		</div>
+		<div class="ui basic segment container" id="AS2">
+  		<h2 class="ui dividing header section-beg">AS2 <span class="ui label green"><i class="percent icon"></i> 100 Pure</span><a class="anchor" id="types"></a></h2>
+  		<div class="content">
+  			<div class="ui raised segment blue" style="font-weight: 300;">
+				<div class="ui header">Media files - Full version [1.6GB]</div>
+				<div class="content">
+					<div class="ui styled fluid accordion">
+					  <div class="title">
+					    <i class="dropdown icon"></i>
+					    UNIX - Linux, Ubuntu, Debain
+					  </div>
+					  <div class="content">
+					  	<p style="font-weight: 300;">Run the following commands</p>
+					  	<div class="ui segment inverted grey" style="font-weight: 350;">
+					  		<i class="dollar sign icon"></i> wget "https://icer.ink/.repo/legacy/media.zip" <br>
+					  		<i class="dollar sign icon"></i> apt-get install unzip <br>
+					  		<i class="dollar sign icon"></i> unzip media.zip -d /var/www/public_cpps/
+
+					  	</div>
+					  	
+					  </div>
+					  <div class="title">
+					    <i class="dropdown icon"></i>
+					    Windows &amp; MacOS
+					  </div>
+					  <div class="content">
+					  	<p style="font-weight: 300;">Download the following .zip file and extract contents in it to <span class="ui label">XAMPP/htdocs/</span> </p>
+					    <a href="https://icer.ink/.repo/legacy/media.zip" class="ui button inverted green">Download AS2-Media-FULL.zip</a>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="text" style="font-weight: 300;">
+					<p>Now to <b>setup sub-domains</b>. This part be a bit tricky, so stop drinking any coffee</p>
+				  	<div class="ui styled fluid accordion">
+					  <div class="title">
+					    <i class="dropdown icon"></i>
+					    Nginx: UNIX - Linux, Ubuntu, Debain
+					  </div>
+					  <div class="content">
+					  	<div class="ui error message" style="font-weight: 400; font-size: 15;">
+							<i class="warning icon large left floated"></i>Below, <label class="ui label">mycpps.pw</label> is used as <b>domain name</b>, and it may vary depending on your domain name. So if your domain name is <label class="ui label">coolcpps.com</label>, use that instead. If you are running this on a <b>local system</b>, ie <b>localhost</b> use <label class="ui label">localhost</label> as domain name.
+						</div>
+					  	<p>Run the following commands</p>
+					  	<div class="ui segment inverted grey" style="font-weight: 350;">
+					  		<i class="dollar sign icon"></i> sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/<b style="color: yellow;">mycpps.pw</b> <br>
+					  		<i class="dollar sign icon"></i> sudo ln -s /etc/nginx/sites-available/mycpps.pw /etc/nginx/sites-enabled/<b style="color: yellow;">mycpps.pw</b> <br><br>
+
+					  		<i class="dollar sign icon"></i> sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/play.<b style="color: yellow;">mycpps.pw</b> <br>
+					  		<i class="dollar sign icon"></i> sudo ln -s /etc/nginx/sites-available/play.mycpps.pw /etc/nginx/sites-enabled/play.<b style="color: yellow;">mycpps.pw</b> <br><br>
+
+					  		<i class="dollar sign icon"></i> sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/media.<b style="color: yellow;">mycpps.pw</b> <br>
+					  		<i class="dollar sign icon"></i> sudo ln -s /etc/nginx/sites-available/media.mycpps.pw /etc/nginx/sites-enabled/media.<b style="color: yellow;">mycpps.pw</b> <br>
+					  	</div>
+					  	<p>Now to edit each file, so that each of them corressponds to our sub-domain, and it's directory</p>
+					  	<p>You can use any text editor of your choice, I prefer nano or editing files in local-pc and then uploading it to the VPS.</p>
+					  	<p>Make sure, <label class="ui label">/etc/nginx/sites-available/mycpps.pw</label> looks similar to this</p>
+					  	<div class="ui segment inverted grey" style="font-weight: 400;">
+					  		<pre>server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+	root /var/www/public_cpps;
+	index index.html;
+	server_name <b style="color: yellow;">mycpps.pw</b>;
+}</pre>
+					  	</div>
+					  	<p>Now, setup subdomain files. Edit the following files to have the following content in it instead.</p>
+					  	<div class="accordion">
+						  <div class="title">
+						    <i class="dropdown icon"></i>
+						    /etc/nginx/sites-available/play.mycpps.pw
+						  </div>
+						  <div class="content">
+						  	<pre>server {
+    listen 80;
+    listen [::]:80;
+    root /var/www/public_cpps/play;
+    index index.html;
+    server_name play.<b style="color: red;">mycpps.pw</b>;
+}
+</pre>
+						  </div>
+						  <div class="title">
+						    <i class="dropdown icon"></i>
+						    /etc/nginx/sites-available/media.mycpps.pw
+						  </div>
+						  <div class="content">
+						  	<pre>server {
+    listen 80;
+    listen [::]:80;
+    root /var/www/public_cpps/media;
+    index index.html;
+    server_name media.<b style="color: red;">mycpps.pw</b>;
+}
+</pre>
+						  </div>
+						</div>
+					  	
+					  </div>
+					  <div class="title">
+					    <i class="dropdown icon"></i>
+					    Apache: Windows &amp; MacOS
+					  </div>
+					  <div class="content">
+					  	<div class="ui message info" style="font-weight: 500;">
+					  		<i class="warning icon"></i> Here, <label class="ui label">XAMPP\</label> refers to the directory where you installed XAMPP. Typically it would be <label class="ui label">C:\XAMPP\</label>, so for example <label class="ui label">XAMPP\htdocs</label> would become <label class="ui label">C:\XAMPP\htdocs</label>
+					  	</div>
+					  	<p>Open, <label class="ui label">XAMPP\apache\conf\extra\httpd-vhosts.conf</label> in a text editor. Go to the last line, and append these</p>
+					  	<div class="ui segment inverted grey" style="font-weight: 400;">
+<pre>
+&lt;VirtualHost *:80&gt;
+    DocumentRoot "<b style="color: yellow;">XAMPP/</b>htdocs/play"
+    ServerName play.localhost
+
+    ErrorLog "logs/play.localhost"
+    CustomLog "logs/play.localhost" common
+&lt;/VirtualHost&gt;
+
+&lt;VirtualHost *:80&gt;
+    DocumentRoot "<b style="color: yellow;">XAMPP/</b>htdocs/media"
+    ServerName media.localhost
+
+    ErrorLog "logs/media.localhost"
+    CustomLog "logs/media.localhost" common
+&lt;/VirtualHost&gt;
+</pre>
+					  	</div>
+					  </div>
+					</div>
+				</div>
+		</div>
+
+			
+		</div>
+		<div class="ui basic segment container" id="Friends" style="font-weight: 300;">
+			<h2 class="ui dividing header section-beg">Friends <span class="ui label green"><i class="meh outline icon"></i> Panic-free</span><a class="anchor" id="types"></a></h2>
+			<div class="content" style="font-weight: 300;">
+				<p>Here comes the exciting part, it's time to setup client for Friends List implementation.</p>
+				<div class="ui message info">
+					<div class="ui header">Note</div>
+					<div class="content">
+						<p>Timeline (server) already comes with Friends System integrated, but the client needs some tweaks (and twinkies) to support the implemented list</p>
+					</div>
+				</div>
+				<p>First off, <b>download the friends .zip file</b></p>
+				<div class="ui styled fluid accordion">
+					  <div class="title">
+					    <i class="dropdown icon"></i>
+					    UNIX - Linux, Ubuntu, Debain
+					  </div>
+					  <div class="content">
+					  	<p>Run the following commands</p>
+					  	
+					  	<div class="ui segment attached inverted grey" style="font-weight: 350; border: none; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+					  		<i class="dollar sign icon"></i>  wget "https://github.com/Times-0/Friends/archive/master.zip" <br>
+ 							<i class="dollar sign icon"></i> apt-get install unzip <br>
+ 							<i class="dollar sign icon"></i> unzip media.zip -d /var/www/tmp/ <br>
+ 							<i class="dollar sign icon"></i> sudo mv /var/www/tmp/Friends-master/html/* /var/www/public_cpps/play/ <br>
+ 							<br>
+ 							<i class="dollar sign icon"></i> sudo mv /var/www/tmp/Friends-master/media1/* /var/www/public_cpps/<b style="color: yellow;">media1</b>/
+					  	</div>
+					  	<div class="ui info message bottom attached" style="font-weight: 400;">
+					  		<i class="lightbulb outline icon"></i> For <label class="ui label">AS2</label>, use <label class="ui label">media</label> instead of <b>media1</b>
+					  	</div>
+
+					  </div>
+
+					  <div class="title">
+					  	<i class="dropdown icon"></i>
+					  		Windows & MacOS
+					  </div>
+					  <div class="content">
+					  	<p><a class="ui button inverted green" href="https://github.com/Times-0/Friends/archive/master.zip" target="_blank">Download Friends.zip</a></p>
+					  	<p>Place contents in <b>html</b> inside <label class="ui label">XAMPP/htdocs/play</label> folder, and contents in <b>media1</b> in <label class="ui label">XAMPP/htdocs/media1</label> (or <label class="ui label">XAMPP/htdocs/media1</label> for AS2) folder</p>
+					  </div>
+				</div> <br>
+				
+				<p>After that's set, open <label class="ui label">media1/play/v2/client/dependencies.json</label> (or <label class="ui label">media1/play/v2/client/dependencies.json</label> for AS2), in a text editor. (you can use <label class="ui label">nano media1/play/v2/client/dependencies.json</label> on Ubuntu)</p>
+				<p>Find the following,</p>
+				<div class="ui segment inverted grey" style="font-weight: 400;">
+<pre>
+{
+	"id": "interface",
+	"title": "Interface"
+},
+</pre>
+				</div>
+				<p>below that, add this</p>
+				<div class="ui segment inverted grey" style="font-weight: 400;">
+<pre>
+{
+	"id": "Friends",
+	"title": "Dote's HTML5 friends list"
+},
+</pre>
+				</div>
+				<p>It would look something like this,</p>
+				<p><img class="ui image" src="/img/dependencies.png"></p>
+
+				<p><b>Friend-lasting!</b> now all thats left is to <b>add HTML codes to your play page</b>. This one's tricky.</p>
+				<div class="ui message error" style="font-weight: 300;">
+					<div class="ui header">Note</div>
+					<div class="content">
+						<p>Depending on your pre-existing HTML theme (template/framework) the Friends List may/may not work as expected. Fragment of it's UI possibly can be broken and wary.</p>
+						<p>If you are using <b>this template</b>, it already has Friends List integrated in HTML, so you can skip this in that case.</p>
+					</div>
+				</div>
+				<p><i style="font-weight: 350;">Making sure you read the above note, let's move on</i>. Open your <b>index.html</b> in <label class="ui label">XAMPP/htdocs/play</label> (or <label class="ui label">/var/www/public_cpps/play</label>), in a text editor (you can use nano for Ubuntu).</p>
+				<p>Place the following, on top of <label class="ui label">&lt;head&gt;</label> tag</p>
+				<div class="ui segment inverted grey" style="font-weight: 400;">
+<pre>
+&lt;link href="css/timeline-friends.css" rel="stylesheet">
+
+&lt;script src="js/jquery-2.1.4.min.js" type="text/javascript">&lt;/script>
+&lt;script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js">&lt;/script>
+</pre>
+				</div>
+				<p>It should look sotra like this</p>
+				<p><img class="ui image" src="/img/html.png"></p>
+
+				<p>Now, find <label class="ui label">&lt; /body></label>, just above that add the following</p>
+				<div class="ui segment inverted grey" style="font-weight: 400; overflow-x: scroll;">
+<pre>
+&lt;div id="test-list" style="margin-top: 30px;"> &lt;!--Friends list preview!--> &lt;div id="friends-list" class="friends-outer-shadow friends-box-outer" style="left: 305px; top: 36px; display: none;"> &lt;div class="friends-box"> &lt;!--Drag bar--> &lt;div id="f-drag"> &lt;div class="f-drag"> &lt;/div> &lt;/div> &lt;div id='f-head'> &lt;img class="friend-icon" src='img/friends_icon.png'> &lt;b>&lt;p class="friend-icon-text"> Friends &lt;span style="color:#034C8B; font-size:20px;">(&lt;span id="f-count">00&lt;/span>)&lt;/span>&lt;/p>&lt;/b> &lt;div id='f-close'>&lt;div class='close-fx'>&lt;/div>&lt;/div> &lt;/div> &lt;div id="f-loader"> &lt;div class="f-loader">&lt;/div> &lt;/div> &lt;div id="f-body"> &lt;/div> &lt;div class="f-s-pmd-bar" id = "open-f-r" style="position: absolute; top: 444px; z-index: 3;">&lt;/div> &lt;div id="f-requests"> &lt;div class="f-s-pmd-bar" id="close-f-r">&lt;/div> &lt;div class="f-loader" style="top:-5px;"> &lt;b>&lt;p style="font-size: 14px; color: white; top: 60px; position: relative; text-align: left; left: -65px;">Requests are being mashed down&lt;/p>&lt;/b> &lt;/div> &lt;div class='f-s-request'> &lt;/div> &lt;/div> &lt;div id="f-search-box"> &lt;div class="f-s-pmd-bar">&lt;/div> &lt;div class="f-loader" style="display: none; top:-5px;"> &lt;b>&lt;p style="font-size: 14px; color: white; top: 60px; position: relative; text-align: left; left: -5px;">Searching&lt;/p>&lt;/b> &lt;/div> &lt;div class='f-s-result'> &lt;div class="f-search-result-box"> &lt;/div> &lt;/div> &lt;/div> &lt;div id="f-search"> &lt;input class="f-search" id="f-search-input" maxlength="12" placeholder="Enter nickname to search"> &lt;div class="f-search-button">&lt;b style="position: relative;top: 1px;">Find&lt;/b>&lt;/div> &lt;/div> &lt;/div> &lt;/div> &lt;/div> 
+
+&lt;script src="js/friends-timeline.js">&lt;/script>
+&lt;script type="text/javascript">
+$(document).ready( function () {
+	$.Timeline.Friends.clientSelector = "#club_penguin"; // change this in all JS file and here if your swf object id is not 'club_penguin'
+}
+&lt;/script>
+</pre>
+				</div>			
+				<p>Soups ready. Cherish it with your buddies, all done!</p>	
+				<div class="ui message info">
+					<div class="ui header">Note</div>
+					<div class="content" style="font-weight: 300;">
+						<p>In case your swf object tag id is not club_penguin, change club_penguin to your tag id in both the index.html and friends-timeline.js file.</p>
+					</div>
+				</div>
+
+			</div>
+  			
+
+			<div class="section-end"></div>
+		</div>
+		<div class="ui clearing basic segment blue">
+		  <div data-title="Coming Soon" data-content="Documentation for Register &amp; Login will be available soon. But it's already available on the GitHub for you to grab and use." class="ui right floated button register-login" href="/docs/register-login.html">Register &amp; Login <i class="right angle icon divider"></i></div>
+		  <a class="ui left floated button" href="/docs/"><i class="left angle icon divider"></i> Getting Started</a>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(function (argument) {
+			$(".master-sticky").sticky({offset:140, observeChanges:true});
+			$('.ui.accordion').accordion();
+			$('.section-beg').sticky({zIndex: 1002,
+				onStick: function() {
+					$(".master-sticky").sticky('refresh');
+					var id = $(this).parent().attr('id');
+                    $('.master-sticky > .accordion').accordion('open', 1);
+                    var e = $($('.master-sticky > .accordion').find('.content.menu')[1]).find('a[href="#'+id+'"]');
+                    $($('.master-sticky > .accordion').find('.content.menu')[1]).find('a').removeClass('active'); e.addClass('active');
+					$(this).attr('style', 'z-index: 1001; left: 50%; color: white; top: 35px; position: fixed;');
+				},
+				onUnstick: function() {
+					$(".master-sticky").sticky('refresh');
+					var id = $(this).parent().attr('id');
+                    $('.master-sticky > .accordion').accordion('open', 1);
+                    var e = $($('.master-sticky > .accordion').find('.content.menu')[1]).find('a[href="#'+id+'"]');
+                    $($('.master-sticky > .accordion').find('.content.menu')[1]).find('a').removeClass('active'); e.addClass('active');
+					$(this).attr('style', ''); 
+				}, observeChanges: true,
+				offset: 35
+			});
+            $($('.master-sticky > .accordion').find('.content.menu')[1]).find('a').on('click', function(){$('.section-beg').visibility('refresh')});
+            setInterval(function(){$(".section-beg").sticky('refresh');;}, 1000);
+            $('.register-login').popup({on: 'click'});
+			
+		});
+	</script>
+
+</body>
+</html>

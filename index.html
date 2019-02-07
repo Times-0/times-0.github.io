@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timeline | Home</title>
+	<link rel="shortcut icon" type="image/png" href="https://png.pngtree.com/element_origin_min_pic/17/08/24/5e79760653875de13fcac246d4a0098d.jpg"/>
+
+	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+	<script src="semantic/dist/semantic.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="semantic/dist/themes/material/theme.css">
+	<style type="text/css">
+
+	    .hidden.menu {
+	      display: none;
+	    }
+
+	    .masthead.segment {
+	      min-height: 700px;
+	      padding: 1em 0em;
+	    }
+	    .masthead .logo.item img {
+	      margin-right: 1em;
+	    }
+	    .masthead .ui.menu .ui.button {
+	      margin-left: 0.5em;
+	    }
+	    .masthead h1.ui.header {
+	      margin-top: 3em;
+	      margin-bottom: 0em;
+	      font-size: 4em;
+	      font-weight: normal;
+	    }
+	    .masthead h2 {
+	      font-size: 1.7em;
+	      font-weight: normal;
+	    }
+
+	    .ui.vertical.stripe {
+	      padding: 8em 0em;
+	    }
+	    .ui.vertical.stripe h3 {
+	      font-size: 2em;
+	    }
+	    .ui.vertical.stripe .button + h3,
+	    .ui.vertical.stripe p + h3 {
+	      margin-top: 3em;
+	    }
+	    .ui.vertical.stripe .floated.image {
+	      clear: both;
+	    }
+	    .ui.vertical.stripe p {
+	      font-size: 1.33em;
+	    }
+	    .ui.vertical.stripe .horizontal.divider {
+	      margin: 3em 0em;
+	    }
+
+	    .quote.stripe.segment {
+	      padding: 0em;
+	    }
+	    .quote.stripe.segment .grid .column {
+	      padding-top: 5em;
+	      padding-bottom: 5em;
+	    }
+
+	    .footer.segment {
+	      padding: 5em 0em;
+	    }
+
+	    .secondary.pointing.menu .toc.item {
+	      display: none;
+	    }
+
+	    @media only screen and (max-width: 700px) {
+	      .ui.fixed.menu {
+	        display: none !important;
+	      }
+	      .secondary.pointing.menu .item,
+	      .secondary.pointing.menu .menu {
+	        display: none;
+	      }
+	      .secondary.pointing.menu .toc.item {
+	        display: block;
+	      }
+	      .masthead.segment {
+	        min-height: 350px;
+	      }
+	      .masthead h1.ui.header {
+	        font-size: 2em;
+	        margin-top: 1.5em;
+	      }
+	      .masthead h2 {
+	        margin-top: 0.5em;
+	        font-size: 1.5em;
+	      }
+	    }
+
+	    .overlay-menu-lazy {
+		  background-color: #FFFFFF;
+		  padding: 0em;
+		  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+		  transition: all 0.5s ease;
+		  background: transparent;
+		}
+		/* change style */
+		.fixed.overlay-menu-lazy {
+		  position: fixed;
+		  padding: 1em;
+		  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+		}
+		.head-sticky {
+			z-index: 1002 !important;
+		}
+
+
+	  </style>
+</head>
+<body>
+	<div class="pusher">
+		<div class="ui masthead center aligned vertical segment inverted blue" style="background:url(img/Timeline.png); background-repeat: no-repeat; background-size: cover; background-position: center;">
+			<div class="ui container" style="z-index: 1000;">
+				<div class="ui secondary large menu overlay-menu-lazy" style="z-index: 1001">
+					<div class="ui item">
+						<div class="ui button active"><i class="home icon"></i> Home</div>
+
+						<a class="ui button" href="https://github.com/Times-0/Timeline#timeline" target="_blank"><i class="github icon"></i> Timeline-GitHub</a>
+						<a class="ui button" href="/docs"><i class="book icon"></i> Docs</a>
+					</div>
+
+				  <div class="right item">
+				  	<div class="header"><b>Play Now</b></div>
+				    <a class="ui primary button inverted" href="/member/"><i class="plus icon"></i> Sign up</a>
+				    <a class="ui button blue login-btn" href="/member/"><i class="sign in alternate icon"></i> Log in</a>
+				  </div>
+				</div>
+			</div>
+			<div class="ui text container blue" style="padding-top: 5%;">
+				<a class="ui huge button brown timeline-download-button" href="https://github.com/Times-0/Timeline/archive/master.zip">
+					Download <i class="right download icon"></i>
+				</a>
+			</div>
+		</div>
+
+		<div class="ui modal timeline-download">
+		  <i class="close icon"></i>
+		  <div class="header">
+		    <i class="rocket large icon"></i> Awwwsomeee!
+		  </div>
+		  <div class="ui bottom attached success message">
+		  		<div class="header">Your download will start in a <b>jist!</b></div>
+			  	<p> Download not started? <a href="https://github.com/Times-0/Timeline/archive/master.zip">Click here</a> to try again.</p>
+			</div>
+		  <div class="image content">
+		    <div class="ui medium image">
+		      <img src="/img/yay.jpg">
+		    </div>
+		    <div class="description">
+		      <div class="ui header">You are ONE-STEP CLOSER to experiencing THE SWEETEST <b>Source</b>.</div>
+		      <p>After downloading the source-files, you must complete some requirements and <i>setup-some cherries</i> :~). Once all set, you are ready to <b>FIRE</b> </p>
+		      <br>
+		      <p>Click the button below to go to the <b>Docs</b> and find out how to <b>setup Timeline</b> with <b>EEZZZZ!</b></p>
+		    </div>
+		  </div>
+		  <div class="ui actions segment inverted blue">
+		    <a class="ui right labeled icon button docs-button inverted" href="/docs">
+		      Let's GO!
+		      <i class="rocket icon"></i>
+		    </a>
+		  </div>
+		</div>
+
+		<div class="ui vertical stripe container master-thread">
+			<div class="ui piled segment timeline-features" id="exclusive-features">
+				<div class="left ui rail" style="">
+				    <div class="ui sticky features-sticky" style="width: 272px !important; height: 262.531px !important; left: 1356.5px;">
+				    	<div class="ui segment">
+				      		<h3 class="ui header">Timeline Exclusive Features</h3>
+				      		<p>Timeline supports a wide range of features. But some are exclusive and unique only for Timeline. Here is an adaptive list briefing them.</p>
+				  		</div>
+				    </div>
+				</div>
+			  <h4 class="ui header center aligned head-sticky sticky">Timeline Exclusive Features</h4>
+			  <div class="ui link cards center aligned grid">
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/message1.png">
+				    </div>
+				    <div class="content">
+					    <a class="header">Real-time Message Filter</a>
+					    <div class="description">
+				        	Using Google's Perspective API
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Jan 2019</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/rt4.png">
+				    </div>
+				    <div class="content">
+					    <a class="header">Real-time Data Sync</a>
+					    <div class="description">
+				        	Real-time updation of without any re-login
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Dec 2017</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>, <a>Quackles</a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/cc1.jpg">
+				    </div>
+				    <div class="content">
+					    <a class="header">Cross Compatibility</a>
+					    <div class="description">
+				        	AS2 &amp; AS3 cross compatible
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in May 2018</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/friend.jpg">
+				    </div>
+				    <div class="content">
+					    <a class="header">Friends System</a>
+					    <div class="description">
+				        	First open-sourced working friends system
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Feb 2018</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/ai3.png">
+				    </div>
+				    <div class="content">
+					    <a class="header">Intelligent Find-Four AI</a>
+					    <div class="description">
+				        	Using MiniMax algorithm
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Dec 2017</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+			</div>
+		</div>
+
+		<div class="ui vertical stripe container">
+			<div class="ui piled segment timeline-features-1" id="features">
+				<div class="left ui rail" style="">
+				    <div class="ui sticky features-sticky-1" style="width: 272px !important; height: 262.531px !important; left: 1356.5px;">
+				    	<div class="ui segment">
+				      		<h3 class="ui header">Features</h3>
+				      		<p>Timeline supports a wide range of features. Here you have an adaptive list.</p>
+				  		</div>
+				    </div>
+				</div>
+			  <h4 class="ui header center aligned head-sticky sticky">Features</h4>
+			  <div class="ui link cards center aligned grid">
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/login4.png">
+				    </div>
+				    <div class="content">
+					    <a class="header">Login</a>
+					    <div class="description">
+				        	Secured Login System
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Nov 2017</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/inv2.png">
+				    </div>
+				    <div class="content">
+					    <a class="header">Inventory</a>
+					    <div class="description">
+				        	Classy-Inventory for the modern picks
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Nov 2017</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/cloth2.png">
+				    </div>
+				    <div class="content">
+					    <a class="header">Clothing</a>
+					    <div class="description">
+				        	Outlook yourself wearing epic-wares!
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Nov 2017</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/mascot2.png">
+				    </div>
+				    <div class="content">
+					    <a class="header">Mascot</a>
+					    <div class="description">
+				        	Friendly mascots you can have fun around parties
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Nov 2017</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/room1.png">
+				    </div>
+				    <div class="content">
+					    <a class="header">Rooms</a>
+					    <div class="description">
+				        	Spawn bettwen rooms! There was never enough time to explore all
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Nov 2017</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/epf3.png" style="height: 300px; width: 240px;">
+				    </div>
+				    <div class="content">
+					    <a class="header">EPF</a>
+					    <div class="description">
+				        	Join the Elite Force and complete tasks saving the island
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Nov 2017</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/chatting1.jpg">
+				    </div>
+				    <div class="content">
+					    <a class="header">Waddling &amp; Chatting</a>
+					    <div class="description">
+				        	Wandering about the island and make new friends
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Nov 2017</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/stamp2.png">
+				    </div>
+				    <div class="content">
+					    <a class="header">Stamps </a>
+					    <div class="description">
+				        	Collect stamps and complete your collection, and show it off to your friends
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Nov 2017</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/puffle1.png">
+				    </div>
+				    <div class="content">
+					    <a class="header">Puffles</a>
+					    <div class="description">
+				        	Adopt cute puffles, wander around, and discover cool treasures!
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Dec 2017</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/pi.png">
+				    </div>
+				    <div class="content">
+					    <a class="header">Puffle Interaction</a>
+					    <div class="description">
+				        	Spend time and interact with your puffles. Take them out for a walk
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Dec 2017</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/puffle2.png">
+				    </div>
+				    <div class="content">
+					    <a class="header">Rainbow Puffle Quests</a>
+					    <div class="description">
+				        	Complete interesting quests, and adopt Rainbow Puffle at the Rainbow Cloud!
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Jan 2018</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/gold1.png">
+				    </div>
+				    <div class="content">
+					    <a class="header">Gold Puffle Quests</a>
+					    <div class="description">
+				        	Complete enchanting quests, and adopt Gold Puffle at the Gold Mine!
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Jan 2018</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/post2.png">
+				    </div>
+				    <div class="content">
+					    <a class="header">Mail System</a>
+					    <div class="description">
+				        	Send cool postcards to your buddies!
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Nov 2017</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/igloo1.jpg">
+				    </div>
+				    <div class="content">
+					    <a class="header">Igloo</a>
+					    <div class="description">
+				        	Complete enchanting quests, and adopt Gold Puffle at the Gold Mine!
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Nov 2017</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/ss1.png">
+				    </div>
+				    <div class="content">
+					    <a class="header">Sound Studio</a>
+					    <div class="description">
+				        	Complete enchanting quests, and adopt Gold Puffle at the Gold Mine!
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Jan 2018</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+			</div>
+		</div>
+
+		<div class="ui piled segment timeline-features-2" id="games">
+				<div class="left ui rail" style="">
+				    <div class="ui sticky features-sticky-2" style="width: 272px !important; height: 262.531px !important; left: 1356.5px;">
+				    	<div class="ui segment">
+				      		<h3 class="ui header">Games - Multiplayer</h3>
+				      		<p>Timeline supports a wide range of Games. All single-player games work. Here is an adaptive list briefing Multiplayer ones.</p>
+				  		</div>
+				    </div>
+				</div>
+			  <h4 class="ui header center aligned head-sticky sticky">Games - Multiplayer</h4>
+			  <div class="ui link cards center aligned grid">
+			  	<div class="card">
+				    <div class="image">
+				      <img src="/img/features/fire1.png">
+				    </div>
+				    <div class="content">
+					    <a class="header">Card Jitsu Fire</a>
+					    <div class="description">
+				        	Let your Ninja skills shine on a furious game of CJ-Fire
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Mar 2018</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/fire2.png">
+				    </div>
+				    <div class="content">
+					    <a class="header">Card Jitsu Fire vs Sensei</a>
+					    <div class="description">
+				        	Meet and defeat master Sensei in a round of Fire CJ, take control of the furious element of nature - Fire
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Jan 2019</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/th1.jpg">
+				    </div>
+				    <div class="content">
+					    <a class="header">Treasure Hunt</a>
+					    <div class="description">
+				        	Team-up with your friends and hunt for valuable treasures
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in May 2018</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/cj1.png">
+				    </div>
+				    <div class="content">
+					    <a class="header">Card Jitsu</a>
+					    <div class="description">
+				        	Earn belt by showing your wits in a match of Card Jitsu. Become a Ninja!
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Jan 2018</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/cj2.webp">
+				    </div>
+				    <div class="content">
+					    <a class="header">Card Jitsu vs Sensei</a>
+					    <div class="description">
+				        	Show your Ninja skills, battle agaisnt the master Sensei, earn yourself a black mask and become a true Ninja!
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Mar 2018</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/sr1.png">
+				    </div>
+				    <div class="content">
+					    <a class="header">Sled Racing</a>
+					    <div class="description">
+				        	Ski down the snowy hills and have a friendly competetion
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Jan 2018</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/ff.png">
+				    </div>
+				    <div class="content">
+					    <a class="header">Find Four</a>
+					    <div class="description">
+				        	Multiplayer CP's version of Connect-4
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Dec 2017</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+				  <div class="card">
+				    <div class="image">
+				      <img src="/img/features/mancala.png">
+				    </div>
+				    <div class="content">
+					    <a class="header">Mancala</a>
+					    <div class="description">
+				        	Meet your friends in a friendly match of Mancala
+				      	</div>
+					    <div class="meta">
+					      <span class="date">Created in Jan 2018</span>
+					    </div>
+					</div>
+					<div class="extra content center aligned">
+					    <a>
+					      <i class="users icon"></i>
+					      Dote
+					    </a>
+					</div>
+				  </div>
+			</div>
+		</div>
+		
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(function () {
+			$('.timeline-download.modal')
+		        .modal({blurring: true})
+		        .modal('setting', 'transition', 'horizontal flip')
+		        .modal('attach events', '.timeline-download-button', 'show');
+
+		    $(".docs-button").hover(function(){$(".docs-button").transition('jiggle');});
+		    $('.features-sticky')
+			  .sticky({
+			    context: '.timeline-features',
+			    offset: 90
+			  })
+			;
+			$('.features-sticky-1')
+			  .sticky({
+			    context: '.timeline-features-1',
+			    offset: 90
+			  })
+			;
+			$('.features-sticky-2')
+			  .sticky({
+			    context: '.timeline-features-2',
+			    offset: 90
+			  })
+			;
+			$('.masthead')
+		        .visibility({
+		          once: false,
+		          onBottomPassed: function() {
+		            $('.overlay-menu-lazy').addClass('fixed').removeClass('secondary');
+		          },
+		          onBottomPassedReverse: function() {
+		            $('.overlay-menu-lazy').removeClass('fixed').addClass('secondary');
+		          },
+					zindex: 1000
+		        })
+		    ;
+		    $('.head-sticky').sticky({offset: 50});
+		});
+	</script>
+
+</body>
+</html>
