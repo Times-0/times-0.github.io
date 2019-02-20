@@ -111,7 +111,7 @@
 
 
 	  </style>
-	<meta charset="UTF-8">
+	  <meta charset="UTF-8">
 	  <meta name="description" content="Timeline Members > Login">
 	  <meta name="keywords" content="Timeline,AS3,AS2,CPPS,Club,Penguin,Private,Server,Emulator,Python,Server,Twisted">
 	  <meta name="author" content="Dote">
@@ -170,9 +170,66 @@
 		  </div>
 		</div>
 
+		<div class="ui error-list fixed" style="position: fixed; bottom: 10px; right: 10px; max-width: 300px;">
+			
+		</div>
+
 		<div class="main ui stripe vertical container segment master-thread blurring">
 			<div class="ui inverted dimmer">
-		    	<div class="ui text loader">Checking for previous login session</div>
+		    	<div class="ui text loader dim-load">Checking for previous login session</div>
+		    	<div class="ui clearing segment left aligned red verify-mail" style="display: none; min-width: 400px;">
+		    		<div class="ui header">Verify Email</div>
+		    		<div class="content center aligned" style="font-weight: 300;">
+		    			<p>An email has been sent to <label class="ui label verify-email">someone@example.com</label></p>
+		    			<p> Verify your email to continue login</p>
+		    		</div>
+		    		<div class="ui grid segment inverted red" style="bottom: -20px;">
+		    			<div class="ui item left floated" style="padding:5px;">
+		    				<div class="ui right labeled icon button inverted verify-mail-resend">Resend Verification Email <i class="envelope icon"></i></div>
+		    			</div>
+
+		    			<div class="ui item right floated" style="padding:10px; font-weight: 400;">
+		    				Account status: <label class="ui label red .verify-status">disabled</label>
+		    			</div>
+					</div>
+		    	</div>
+		    	<div class="ui clearing segment left aligned green nickname-setup" style="display: none; min-width: 400px;">
+		    		<div class="ui header">Setup Nickname (Display Name)</div>
+		    		<div class="content center aligned" style="font-weight: 300;">
+		    			<p>To continue login, please choose a nickname.</p>
+		    			<div class="field">
+				          <label>Nickname</label>
+				          <div class="ui left icon input">
+				            <input type="text" placeholder="MeowKitten" value="" class="nick-txt">
+				            <i class="user icon"></i>
+				          </div>
+				        </div>
+		    		</div>
+		    		<div class="ui grid segment inverted green" style="bottom: -20px;">
+		    			<div class="ui item left floated" style="padding:5px;">
+		    				<div class="ui right labeled icon button inverted nickname-set">Set nickname <i class="check icon"></i></div>
+		    			</div>
+
+		    			<div class="ui item right floated" style="padding:10px; font-weight: 400;">
+		    				Account status: <label class="ui label orange .verify-status">blocked</label>
+		    			</div>
+					</div>
+		    	</div>
+		    	<div class="ui clearing segment left aligned red error-alert" style="display: none; min-width: 400px;">
+		    		<div class="ui header">Something went wrong!</div>
+		    		<div class="content center aligned" style="font-weight: 300;">
+		    			<p class="alert-txt">Someone ate all the pies.</p>
+		    		</div>
+		    		<div class="ui grid segment inverted red" style="bottom: -20px;">
+		    			<div class="ui item left floated" style="padding:5px;">
+		    				<div class="ui left labeled icon button inverted close-alert"><span class="close-alert-txt">Close</span> <i class="close icon"></i></div>
+		    			</div>
+
+		    			<div class="ui item right floated" style="padding:10px; font-weight: 400;">
+		    				Signin status: <label class="ui label white signin-status">puked</label>
+		    			</div>
+					</div>
+		    	</div>
 		  </div>
 			<div class="ui header">
 				Login using Username-password or use Social media
@@ -186,22 +243,22 @@
 				        <div class="field">
 				          <label>Username / Email</label>
 				          <div class="ui left icon input">
-				            <input type="text" placeholder="example@mail.com">
+				            <input type="text" placeholder="example@mail.com" class="login-user">
 				            <i class="user icon"></i>
 				          </div>
 				        </div>
 				        <div class="field">
-				        	<div class="ui submit button labeled icon .login-email-auth">Login via Email link <i class="envelope icon"></i></div>
+				        	<div class="ui submit button labeled icon login-email-auth">Login via Email link <i class="envelope icon"></i></div>
 				        </div>
 				        <div class="field">
 				          <label>Password</label>
 				          <div class="ui left icon input">
-				            <input type="password" placeholder="password">
+				            <input type="password" placeholder="password" class="login-pass">
 				            <i class="lock icon"></i>
 				          </div>
 				        </div>
 				        <div class="field">
-				        <div class="ui blue submit button labeled icon .login-email-username-password">Login with Password <i class="key icon"></i></div>	
+				        <div class="ui blue submit button labeled icon login-email-username-password">Login with Password <i class="key icon"></i></div>	
 				        </div>
 				         
 				      </div>
@@ -209,9 +266,9 @@
 			      <div class="ui horizontal divider">or</div>
 			      <div class="ui segment raised blue">
 			      	<div class="ui header center aligned">Login using Social media</div>
-			      	<p><div class="ui labeled icon button red .social-google">Login using Google <i class="google icon"></i></div></p>
-			      	<p><div class="ui labeled icon button blue .social-twitter">Login using Twitter <i class="twitter icon"></i></div></p>
-			      	<p><div class="ui labeled icon button black .social-github">Login using GitHub <i class="github icon"></i></div></p>
+			      	<p><div class="ui labeled icon button red submit social-google">Login using Google <i class="google icon"></i></div></p>
+			      	<p><div class="ui labeled icon button blue submit social-twitter">Login using Twitter <i class="twitter icon"></i></div></p>
+			      	<p><div class="ui labeled icon button black submit social-github">Login using GitHub <i class="github icon"></i></div></p>
 			      </div>
 			    </div>
 			    <div class="middle aligned column">
@@ -233,7 +290,7 @@
 			  </div>
 			</div>
 			<div class="ui message error">
-				<div class="ui header">Page under construction. Coming soon.</div>
+				<div class="ui header">Unsure whether Sign-up system will survive</div>
 			</div>
 		</div>
 
@@ -262,15 +319,12 @@
 			});
             $($('.master-sticky > .accordion').find('.content.menu')[0]).find('a').on('click', function(){$('.section-beg').visibility('refresh')});
             setInterval(function(){$(".section-beg").sticky('refresh');;}, 1000);
-            $('.main.ui').dimmer({closable: false}).dimmer('show');
-
-            $.prev_session = window.localStorage.getItem('previous_login_session');
-            if (!!!!$.prev_session || !!!$.prev_session) {
-            	$('.main.ui').dimmer('hide');
-            }
-			
+            $('.main.ui').dimmer({closable: false}).dimmer('show');			
 		});
 	</script>
+	<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-auth.js"></script>
+	<script src="/js/fb.js"></script>
 
 </body>
 </html>

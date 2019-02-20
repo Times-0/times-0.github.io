@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard | Members</title>
+	<link rel="shortcut icon" type="image/png" href="https://png.pngtree.com/element_origin_min_pic/17/08/24/5e79760653875de13fcac246d4a0098d.jpg"/>
+
+	<link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+	<script src="/semantic/dist/semantic.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/semantic/dist/themes/material/theme.css">
+	<style type="text/css">
+
+	    .hidden.menu {
+	      display: none;
+	    }
+
+	    .masthead .logo.item img {
+	      margin-right: 1em;
+	    }
+	    .masthead .ui.menu .ui.button {
+	      margin-left: 0.5em;
+	    }
+	    .masthead h1.ui.header {
+	      margin-top: 3em;
+	      margin-bottom: 0em;
+	      font-size: 4em;
+	      font-weight: normal;
+	    }
+	    .masthead h2 {
+	      font-size: 1.7em;
+	      font-weight: normal;
+	    }
+
+	    .ui.vertical.stripe {
+	      padding: 8em 0em;
+	    }
+	    .ui.vertical.stripe h3 {
+	      font-size: 2em;
+	    }
+	    .ui.vertical.stripe .button + h3,
+	    .ui.vertical.stripe p + h3 {
+	      margin-top: 3em;
+	    }
+	    .ui.vertical.stripe .floated.image {
+	      clear: both;
+	    }
+	    .ui.vertical.stripe p {
+	      font-size: 1.33em;
+	    }
+	    .ui.vertical.stripe .horizontal.divider {
+	      margin: 3em 0em;
+	    }
+
+	    .quote.stripe.segment {
+	      padding: 0em;
+	    }
+	    .quote.stripe.segment .grid .column {
+	      padding-top: 5em;
+	      padding-bottom: 5em;
+	    }
+
+	    .footer.segment {
+	      padding: 5em 0em;
+	    }
+
+	    .secondary.pointing.menu .toc.item {
+	      display: none;
+	    }
+
+	    @media only screen and (max-width: 700px) {
+	      .ui.fixed.menu {
+	        display: none !important;
+	      }
+	      .secondary.pointing.menu .item,
+	      .secondary.pointing.menu .menu {
+	        display: none;
+	      }
+	      .secondary.pointing.menu .toc.item {
+	        display: block;
+	      }
+	      .masthead h1.ui.header {
+	        font-size: 2em;
+	        margin-top: 1.5em;
+	      }
+	      .masthead h2 {
+	        margin-top: 0.5em;
+	        font-size: 1.5em;
+	      }
+	    }
+
+	    .overlay-menu-lazy {
+		  background-color: #FFFFFF;
+		  padding: 0em;
+		  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+		  transition: all 0.5s ease;
+		  background: transparent;
+		}
+		/* change style */
+		.fixed.overlay-menu-lazy {
+		  position: fixed;
+		  padding: 1em;
+		  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+		}
+		.head-sticky {
+			z-index: 1002 !important;
+		}
+
+
+	  </style>
+	  <meta charset="UTF-8">
+	  <meta name="description" content="Timeline Members > Dashboard">
+	  <meta name="keywords" content="Timeline,AS3,AS2,CPPS,Club,Penguin,Private,Server,Emulator,Python,Server,Twisted">
+	  <meta name="author" content="Dote">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="blue main2">
+	<div class="ui inverted dimmer">
+		
+	</div>
+
+		<div class="full height">
+			<div class="ui left fixed vertical menu blue">
+				  <div class="teal item centered">
+				  	<div class="header"> <h2>Timeline</h2> <h3>Members</h3></div>
+				  </div>
+				  <a class="active teal item home-btn action-btn">
+				    Dashboard
+				    <i class="user icon"></i>
+				  </a>
+				  <a class="item account-btn action-btn">
+				    Account
+				    <i class="wrench icon"></i>
+				  </a>
+				  <a class="item play-btn action-btn">
+				    Play CPPS
+				    <i class="play icon"></i>
+				  </a>
+				  <div class="ui raised segment fixed green" style="border-radius: 15px !important;bottom: 0px;position: absolute;display: inline-block;">
+				    <div class="ui tiny circular image left floated" style="min-height: 80px;">
+				      <img src="https://semantic-ui.com/images/wireframe/image.png" class="ui user-avatar">
+				    </div>
+				    <div class="middle aligned content right floated">
+				      <div class="header user-display-name" style="padding-top: 10px; font-weight: 500;">MeowKitten</div>
+				      <div class="content" style="padding-top: 10px;">
+				      	Logged via <span class="ui label labelled login-provider"><i class="google icon"></i>Google </span>
+				      </div>
+				      <div class="extra">
+				      	<div class="ui two buttons">
+				      		<div class="ui left floated button link-account-btn">
+					        	Link Account
+					        </div>
+					        <div class="or"></div>
+					        <div class="ui right floated button green sign-out-btn">
+					          Sign Out
+					        </div>
+				    	</div>
+				      </div>
+				    </div>
+				  </div>
+			</div>
+		</div>
+
+		<div class="ui modal timeline-modal">
+		  <i class="close icon"></i>
+		  <div class="header">
+		    <i class="lock large icon"></i> Link Providers
+		  </div>
+		  <div class="ui bottom attached success message">
+		  		<div class="header">Link multiple providers</div>
+			  	<p>Once linked, you can login using any of the provider with ease :~)</p>
+			</div>
+		  <div class="content">
+		  	<p><button class="ui button google-link-btn labelled"> <i class="chain broken icon"></i> Unlink</button><label class="ui label red"><i class="google icon"></i> Google</label> <b class="google-link-txt">Linked to <label class="ui label">none@me.ow</label></b></p>
+		  	<p><button class="ui button twitter-link-btn labelled"> <i class="chain broken icon"></i> Unlink</button><label class="ui label blue"><i class="twitter icon"></i> Twitter</label> <b class="twitter-link-txt">Linked to <label class="ui label">none@me.ow</label></b></p>
+		  	<p><button class="ui button github-link-btn labelled"> <i class="chain broken icon"></i> Unlink</button><label class="ui label black"><i class="github icon"></i> GitHub</label> <b class="github-link-txt">Linked to <label class="ui label">none@me.ow</label></b></p>
+		  </div>
+		</div>
+
+		<div class="ui error-list fixed" style="position: fixed; bottom: 10px; right: 10px; max-width: 300px;">
+			
+		</div>
+
+		<div class="main ui vertical container segment master-thread blurring">
+			<div class="ui inverted dimmer">
+		    	<div class="ui text loader dim-load">Loading account</div>
+		    	<div class="ui clearing segment left aligned red verify-mail" style="display: none; min-width: 400px;">
+		    		<div class="ui header">Verify Email</div>
+		    		<div class="content center aligned" style="font-weight: 300;">
+		    			<p>An email has been sent to <label class="ui label verify-email">someone@example.com</label></p>
+		    			<p> Verify your email to continue login</p>
+		    		</div>
+		    		<div class="ui grid segment inverted red" style="bottom: -20px;">
+		    			<div class="ui item left floated" style="padding:5px;">
+		    				<div class="ui right labeled icon button inverted verify-mail-resend">Resend Verification Email <i class="envelope icon"></i></div>
+		    			</div>
+
+		    			<div class="ui item right floated" style="padding:10px; font-weight: 400;">
+		    				Account status: <label class="ui label red .verify-status">disabled</label>
+		    			</div>
+					</div>
+		    	</div>
+		    	<div class="ui clearing segment left aligned green nickname-setup" style="display: none; min-width: 400px;">
+		    		<div class="ui header">Setup Nickname (Display Name)</div>
+		    		<div class="content center aligned" style="font-weight: 300;">
+		    			<p>To continue login, please choose a nickname.</p>
+		    			<div class="field">
+				          <label>Nickname</label>
+				          <div class="ui left icon input">
+				            <input type="text" placeholder="MeowKitten" value="" class="nick-txt">
+				            <i class="user icon"></i>
+				          </div>
+				        </div>
+		    		</div>
+		    		<div class="ui grid segment inverted green" style="bottom: -20px;">
+		    			<div class="ui item left floated" style="padding:5px;">
+		    				<div class="ui right labeled icon button inverted nickname-set">Set nickname <i class="check icon"></i></div>
+		    			</div>
+
+		    			<div class="ui item right floated" style="padding:10px; font-weight: 400;">
+		    				Account status: <label class="ui label orange .verify-status">blocked</label>
+		    			</div>
+					</div>
+		    	</div>
+		    	<div class="ui clearing segment left aligned red error-alert" style="display: none; min-width: 400px;">
+		    		<div class="ui header">Something went wrong!</div>
+		    		<div class="content center aligned" style="font-weight: 300;">
+		    			<p class="alert-txt">Someone ate all the pies.</p>
+		    		</div>
+		    		<div class="ui grid segment inverted red" style="bottom: -20px;">
+		    			<div class="ui item left floated" style="padding:5px;">
+		    				<div class="ui left labeled icon button inverted close-alert"><span class="close-alert-txt">Close</span> <i class="close icon"></i></div>
+		    			</div>
+
+		    			<div class="ui item right floated" style="padding:10px; font-weight: 400;">
+		    				Signin status: <label class="ui label white signin-status">puked</label>
+		    			</div>
+					</div>
+		    	</div>
+		  </div>
+			<div class="ui dividing header">
+				Welcome to Timeline Flex Portal
+			</div>
+			<div class="ui content three column stackable grid">
+				<div class="ui column">
+					<div class="ui card blue">
+					    <div class="image">
+					    	<div class="ui top left attached label blue profile-mail-notification transition hidden" data-title="Mail Notification" data-content="Unread number of postcards">1</div>
+					    	<a class="ui orange ribbon label transition hidden profile-moderator">Moderator</a>
+					    	<a class="ui right corner label profile-member" data-title="Member" data-content="Member since Jan 2018"><i class="star icon"></i></a>
+					      <img src="https://semantic-ui.com/images/wireframe/image.png" class="profile-img">
+					    </div>
+					    <div class="content">
+					      <div class="header user-display-name">MeowKitten</div>
+					      <div class="meta">
+					        <a class="profile-email">cutekittens@kitty.com</a>
+					      </div>
+					      <div class="meta">
+					      	<a class="ui label"><i class="dollar icon"></i><span class="profile-coin">500</span></a>
+					      	<a class="ui label"><i class="star outline icon blue"></i><span class="profile-member-stats">Expires on Feb 2018</span></a>
+					      </div>
+					      <div class="meta">
+					      	
+					      </div>
+					    </div>
+					    <div class="extra content">
+					      <span class="right floated">
+					        Joined on <a class="profile-join">4th Jan, 1989</a>
+					      </span>
+					      <span>
+					        <i class="user icon"></i>
+					        <span class="profile-friends-count">Trump</span> Friends
+					      </span>
+					    </div>
+				  	</div>
+				  </div>
+				  <div class="ui column">
+				  	<div class="ui segment yellow coin-hi loading" style="max-height: 420px; overflow-y: auto;">
+					    <div class="ui header">
+					    	Coin Transaction History [last 100]
+					    </div>
+					    <div class="content">
+					    	<table class="ui collapsing celled table">
+							  <thead>
+							    <tr><th>Comment</th>
+							    <th>Transaction</th>
+							  </tr></thead>
+							  <tbody class="coin-history">
+							  </tbody>
+							</table>
+					    </div>
+				  	</div>
+				  </div>
+				  <div class="ui column" style="max-height: 430px; overflow-y: auto;">
+					<table class="ui celled striped table red">
+					  <thead>
+					    <tr><th colspan="4">
+					      Ban History
+					    </th>
+					  </tr>
+					  <tr>
+					  	<th>Moderator</th>
+					  	<th>Reason</th>
+					  	<th>Expires</th>
+					  	<th>Banned on</th>
+					  </tr></thead>
+					  <tbody class="ban-history">
+					    
+					</table>
+					<div class="ui active inverted dimmer ban-dim">
+					    <div class="ui loader"></div>
+					  </div>
+				  </div>
+			  </div>
+		</div>
+		<div class="play ui vertical container segment master-thread transition hidden" style="height: 100% !important;">
+			<div class="ui active inverted dimmer">
+				<div class="ui loader"></div>
+			</div>
+		</div>
+
+	<script type="text/javascript">
+		$(function (argument) {
+            $('.main.ui, .main2').dimmer({closable: false}).dimmer('show');			
+		});
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-auth.js"></script>
+	<script src="/js/member.js"></script>
+
+</body>
+</html>
