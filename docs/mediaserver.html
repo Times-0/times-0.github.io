@@ -111,7 +111,7 @@
 
 
 	  </style>
-	<meta charset="UTF-8">
+	  <meta charset="UTF-8">
 	  <meta name="description" content="Timeline Docs > Mediaserver">
 	  <meta name="keywords" content="Timeline,AS3,AS2,CPPS,Club,Penguin,Private,Server,Emulator,Python,Server,Twisted">
 	  <meta name="author" content="Dote">
@@ -699,7 +699,7 @@ $(document).ready( function () {
 			<div class="section-end"></div>
 		</div>
 		<div class="ui clearing basic segment blue">
-		  <div data-title="Coming Soon" data-content="Documentation for Register &amp; Login will be available soon. But it's already available on the GitHub for you to grab and use." class="ui right floated button register-login" href="/docs/register-login.html">Register &amp; Login <i class="right angle icon divider"></i></div>
+		  <a class="ui right floated button" href="/docs/register-login.html">Register &amp; Login <i class="right angle icon divider"></i></a>
 		  <a class="ui left floated button" href="/docs/"><i class="left angle icon divider"></i> Getting Started</a>
 		</div>
 	</div>
@@ -729,7 +729,6 @@ $(document).ready( function () {
 			});
             $($('.master-sticky > .accordion').find('.content.menu')[1]).find('a').on('click', function(){$('.section-beg').visibility('refresh')});
             setInterval(function(){$(".section-beg").sticky('refresh');;}, 1000);
-            $('.register-login').popup({on: 'click'});
 			
 		});
 	</script>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introduction > Register &amp; Login | Docs</title>
+	<link rel="shortcut icon" type="image/png" href="https://png.pngtree.com/element_origin_min_pic/17/08/24/5e79760653875de13fcac246d4a0098d.jpg"/>
+
+	<link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+	<script src="/semantic/dist/semantic.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/semantic/dist/themes/material/theme.css">
+	<style type="text/css">
+
+	    .hidden.menu {
+	      display: none;
+	    }
+
+	    .masthead .logo.item img {
+	      margin-right: 1em;
+	    }
+	    .masthead .ui.menu .ui.button {
+	      margin-left: 0.5em;
+	    }
+	    .masthead h1.ui.header {
+	      margin-top: 3em;
+	      margin-bottom: 0em;
+	      font-size: 4em;
+	      font-weight: normal;
+	    }
+	    .masthead h2 {
+	      font-size: 1.7em;
+	      font-weight: normal;
+	    }
+
+	    .ui.vertical.stripe {
+	      padding: 8em 0em;
+	    }
+	    .ui.vertical.stripe h3 {
+	      font-size: 2em;
+	    }
+	    .ui.vertical.stripe .button + h3,
+	    .ui.vertical.stripe p + h3 {
+	      margin-top: 3em;
+	    }
+	    .ui.vertical.stripe .floated.image {
+	      clear: both;
+	    }
+	    .ui.vertical.stripe p {
+	      font-size: 1.33em;
+	    }
+	    .ui.vertical.stripe .horizontal.divider {
+	      margin: 3em 0em;
+	    }
+
+	    .quote.stripe.segment {
+	      padding: 0em;
+	    }
+	    .quote.stripe.segment .grid .column {
+	      padding-top: 5em;
+	      padding-bottom: 5em;
+	    }
+
+	    .footer.segment {
+	      padding: 5em 0em;
+	    }
+
+	    .secondary.pointing.menu .toc.item {
+	      display: none;
+	    }
+
+	    @media only screen and (max-width: 700px) {
+	      .ui.fixed.menu {
+	        display: none !important;
+	      }
+	      .secondary.pointing.menu .item,
+	      .secondary.pointing.menu .menu {
+	        display: none;
+	      }
+	      .secondary.pointing.menu .toc.item {
+	        display: block;
+	      }
+	      .masthead h1.ui.header {
+	        font-size: 2em;
+	        margin-top: 1.5em;
+	      }
+	      .masthead h2 {
+	        margin-top: 0.5em;
+	        font-size: 1.5em;
+	      }
+	    }
+
+	    .overlay-menu-lazy {
+		  background-color: #FFFFFF;
+		  padding: 0em;
+		  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+		  transition: all 0.5s ease;
+		  background: transparent;
+		}
+		/* change style */
+		.fixed.overlay-menu-lazy {
+		  position: fixed;
+		  padding: 1em;
+		  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+		}
+		.head-sticky {
+			z-index: 1002 !important;
+		}
+
+
+	  </style>
+	  <meta charset="UTF-8">
+	  <meta name="description" content="Timeline Docs > Register &amp; Login">
+	  <meta name="keywords" content="Timeline,AS3,AS2,CPPS,Club,Penguin,Private,Server,Emulator,Python,Server,Twisted">
+	  <meta name="author" content="Dote">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="blue">
+	<div class="pusher">
+		<div class="ui masthead center aligned vertical segment inverted blue">
+			<div class="ui container" style="z-index: 1000;">
+				<div class="ui fixed large menu overlay-menu-lazy inverted blue" style="z-index: 1001">
+					<div class="ui item">
+						<div class="ui large breadcrumb">
+							<div class="ui active label large">Timeline</div><i class="right angle icon divider"></i>
+							<div class="ui active inverted button" href="/docs"><i class="book icon"></i> Docs</div>
+							<i class="right angle icon divider"></i>
+							<div class="active section">Introduction</div>					
+						</div>
+					</div>
+
+				  <div class="right item">
+				  	<a class="ui primary inverted button active" href="/"><i class="home icon"></i> Home</a>
+				  </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ui modal timeline-download">
+		  <i class="close icon"></i>
+		  <div class="header">
+		    <i class="rocket large icon"></i> Awwwsomeee!
+		  </div>
+		  <div class="ui bottom attached success message">
+		  		<div class="header">Your download will start in a <b>jist!</b></div>
+			  	<p> Download not started? <a href="https://github.com/Times-0/Timeline/archive/master.zip">Click here</a> to try again.</p>
+			</div>
+		  <div class="image content">
+		    <div class="ui medium image">
+		      <img src="/img/yay.jpg">
+		    </div>
+		    <div class="description">
+		      <div class="ui header">You are ONE-STEP CLOSER to experiencing THE SWEETEST <b>Source</b>.</div>
+		      <p>After downloading the source-files, you must complete some requirements and <i>setup-some cherries</i> :~). Once all set, you are ready to <b>FIRE</b> </p>
+		      <br>
+		      <p>Click the button below to go to the <b>Docs</b> and find out how to <b>setup Timeline</b> with <b>EEZZZZ!</b></p>
+		    </div>
+		  </div>
+		  <div class="ui actions segment inverted blue">
+		    <a class="ui right labeled icon button docs-button inverted" href="/docs">
+		      Let's GO!
+		      <i class="rocket icon"></i>
+		    </a>
+		  </div>
+		</div>
+
+		<div class="main ui stripe vertical container segment master-thread">
+			<div class="ui right rail grid">
+				<div class="ui column computer only">
+			<div class="ui sticky master-sticky"><h4 class="ui header">Introduction</h4>
+				<div class="ui vertical following fluid accordion text menu"><div class="item">
+					<a class="title"><i class="dropdown icon"></i> <b>Getting Started</b></a>
+					<div class="content menu">
+						<a class="item" href="/docs/#Installation">Installation</a>
+						<a class="item" href="/docs/#Usage">Usage</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="title"><i class="dropdown icon"></i> <b>Mediaserver</b></div>
+					<div class="content menu">
+						<a class="item" href="/docs/mediaserver.html#General">General</a>
+						<a class="item" href="/docs/mediaserver.html#AS3">AS3</a>
+						<a class="item" href="/docs/mediaserver.html#AS2">AS2</a>
+						<a class="item" href="/docs/mediaserver.html#Friends">Friends</a>
+					</div>
+				</div>
+				<div class="active item">
+					<div class="active title"><i class="dropdown icon"></i> <b>Register &amp; Login</b></div>
+					<div class="active content menu">
+						<a class="active item" href="#FirebaseSetup">Firebase Setup</a>
+						<a class="item" href="#InstallationWeb">Website Integration</a>
+						<a class="item" href="#Dependency">Setup Dependency</a>
+						<a class="item" href="#InstallationTimeline">Timeline Integration</a>
+						<a class="item" href="#TimeFlex">Setting TimeFlex</a>
+						<a class="item" href="#Screenshot">Preview</a>
+					</div>
+				</div>
+			</div>
+			</div> </div>
+			</div>
+
+		<div class="ui basic segment container" id="FirebaseSetup">
+  		<h2 class="ui dividing header section-beg">Firebase Setup <span class="ui label green"><i class="check icon"></i> Human-free</span><a class="anchor" id="types"></a></h2>
+			<div class="ui raised segment blue" style="font-weight: 300;">
+				<div class="ui header">Note</div>
+			  <p>Before you go on setting up a Firebase project, it's <b>MANDATORY</b> you have an active Google Account, which you are going to use for creating a Firebase Project</p>
+			  <p>You have to work-out all parts in this section to make this login system work. No-skipping on any topic</p>
+			</div>
+			<div class="ui bottom attached warning message" style="top: -15px;">
+			  <i class="lightbulb outline icon"></i>
+			  Previously you have realized existance of Google, now you are about to experience it.
+			</div>
+
+			<div class="ui segment" style="font-weight: 300;">
+				<p>Jump to <a href="https://console.firebase.google.com/" target="_blank" class="ui inverted blue right icon">Firebase Console <i class="external alternate icon"></i></a>, login if required, and create a new project.</p>
+				<img src="/img/firebase/addproj.png" class="ui image">
+				<p>Give it a cool name, agree to the terms and <b>Create</b> your project</p>
+				<img src="/img/firebase/add.png">
+				<p>Now, on the Firebase dashboard, click on <b>Authentication</b> on the left panel, then move to <b>Sign-in method</b> tab</p>
+				<img src="/img/firebase/auth.png">
+				<p>Make sure you enable all required <b>providers</b> using which your user may want to signin.</p>
+				<div class="ui message info">
+					<div class="ui header" style="font-size: 16px; font-weight: 400;"><b>Email/Password</b> signin method is <B>MANDATORY</B></div>
+				</div>
+				<img src="/img/firebase/signin.png">
+				<div class="ui message error">
+					<div class="ui header">Twitter, Facebook and GitHub login</div>
+					<div class="content"><p>In order to login using any of 3rd party providers, you might need to follow their setup guide (you can do by clicking Learn more)</p></div>
+					<img src="/img/firebase/learnmore.png">
+				</div>
+				<p>So good, sooo faaaar.</p>
+				<p>Now, <b>If you are hosting it on a domain (and not localhost)</b>, you MUST add your domain as one of trusted ones. To do this, <b>scroll down</b> for <label class="ui label">Authorized Domains</label> and add your domain name to it.</p>
+				<img src="/img/firebase/authdomain.png">
+			</div>
+			
+		</div>
+		<div class="ui basic segment container" id="InstallationWeb" style="font-weight: 300;">
+			<h2 class="ui dividing header section-beg">Website Integration <span class="ui label green"><i class="percent icon"></i> 100 AI-free</span><a class="anchor" id="types"></a></h2>
+			<div class="ui segment" style="font-weight: 300;">
+				<p>This needs some concentration and enough patience.</p>
+				<div class="ui message info">
+					<p>You might need <b>THIS TEMPLATE</b> in order to use this firebase integration, as it's carefully crafted with care. Download this template, and paste it in your directory that can access <label class="ui label">play.localhost / play.mycpps.pw</label></p>
+
+					<div class="ui styled fluid accordion">
+					  <div class="title">
+					    <i class="dropdown icon"></i>
+					    UNIX - Linux, Ubuntu, Debain
+					  </div>
+					  <div class="content">
+					  	<p>Run the following commands</p>
+					  	<div class="ui segment inverted grey" style="font-weight: 350;">
+					  		<i class="dollar sign icon"></i> sudo apt-get install git <br>
+					  		<i class="dollar sign icon"></i> cd /var/www/public_cpps/play <br>
+					  		<i class="dollar sign icon"></i> git clone https://github.com/Times-0/times-0.github.io.git
+					  	</div>
+					  	
+					  </div>
+					  <div class="title">
+					    <i class="dropdown icon"></i>
+					    Windows &amp; MacOS
+					  </div>
+					  <div class="content">
+					  	<p>Download the following .zip file and extract contents (inside <label class="ui label">times-0.github.io-master</label> folder) to <span class="ui label">XAMPP/htdocs/play</span> </p>
+					    <a href="https://github.com/Times-0/times-0.github.io/archive/master.zip" class="ui button inverted green">Download Timeline-template.zip</a>
+					  </div>
+				</div>
+
+				</div>
+
+				<p>Now, let's <b>Setup Firebase in Web</b></p>
+				
+				<p>We might want to replace lines in js that has your project configs. To do this, first move to your <b>Firebase Project's dashboard</b>. In there click the <b>Web</b> icon, to get your project config</p>
+				<img src="/img/firebase/web.png">
+				<p>You will be provided with something similar to this. <b>Copy the contents inside THE RECTANGLE BOX highlighted</b></p>
+				<img src="/img/firebase/highlight.png">
+				<p>Now open <label class="ui label">XAMPP/htdocs/play/js/fb.js</label> or <label class="ui label">/var/www/public_cpps/play/js/fb.js</label></p>
+				<p>In the beginning of the file, paste what you have copied, so it would look something similar to this,</p>
+				<img src="/img/firebase/config.png">
+				<p>Note: <b>If you are hosting on DOMAIN (not on localhost), you might want to change <label class="ui label">url: 'http://play.localhost/member'</label>, just few lines below (as seen in the pic)</b></p>
+
+				<p>Next, open <label class="ui label">XAMPP/htdocs/play/js/member.js</label> or <label class="ui label">/var/www/public_cpps/play/js/member.js</label> and repeat the same procedure as you did for <label class="ui label">fb.js</label>.</p>
+				<p>Now, in this same <label class="ui label">member.js</label> file, <b>If you are hosting on DOMAIN and not localhost, you should change all occurance of <label class="ui label">localhost</label> to your domain name</b></p>
+				<p>Also, this file contains URLs for Avatar (change it as required)</p>
+				<p>This file also contains POST requests to TimeFlex server, it's already listening on a cloudflare supported HTTP port. Change it as required.</p>
+			</div>
+
+			<div class="section-end"></div>
+		</div>
+		<div class="ui basic segment container" id="Dependency">
+  		<h2 class="ui dividing header section-beg">Setup Dependency <span class="ui label green"><i class="percent icon"></i> 100 Manual</span><a class="anchor" id="types"></a></h2>
+  			<div class="ui segment" style="font-weight: 300;">
+  				<p>In order for this Firebase integration to work, you require a specialized login system - <b>autologin</b>, that logs you in via firebase authentication system.</p>
+  				<p>To do this, first you need to download <label class="ui label">autologin.swf</label> into your client folder.</p>
+
+  				<div class="ui styled fluid accordion">
+					  <div class="title">
+					    <i class="dropdown icon"></i>
+					    UNIX - Linux, Ubuntu, Debain
+					  </div>
+					  <div class="content">
+					  	<p>Run the following command</p>
+					  	<div class="ui segment inverted grey" style="font-weight: 350;">
+					  		<i class="dollar sign icon"></i> wget "https://github.com/Times-0/times-0.github.io/raw/master/autologin.swf" -P /var/www/public_cpps/media1/play/v2/client/
+					  	</div>
+					  	
+					  </div>
+					  <div class="title">
+					    <i class="dropdown icon"></i>
+					    Windows &amp; MacOS
+					  </div>
+					  <div class="content">
+					  	<p>Download the following .swf file put it into <span class="ui label">media1/play/v2/client</span> </p>
+					    <a href="https://github.com/Times-0/times-0.github.io/raw/master/autologin.swf" class="ui button inverted green">Download autologin.swf</a>
+					  </div>
+				</div>
+				<br>
+				<p>Now to <b>edit dependencies.json</b>, open the file <label class="ui label">media1/play/v2/client/dependencies.json</label></p>
+				<p>Find the following</p>
+				<div class="ui segment inverted grey" style="font-weight: 400;">
+<pre>
+{
+	"id": "login",
+	"title": "Login Screen"
+}
+</pre>			
+				</div>
+				<p>After that add a comma (,) and paste the following</p>
+				<div class="ui segment inverted grey" style="font-weight: 400;">
+<pre>
+{
+	"id": "autologin",
+	"title": "Auto Login"
+}
+</pre>
+				</div>
+				<p>It should look something like</p>
+				<img src="/img/firebase/dependencies.png">
+				<p>Save. And it's all DONE!</p>
+  			</div>
+
+			
+		</div>
+		<div class="ui basic segment container" id="InstallationTimeline">
+  		<h2 class="ui dividing header section-beg">Timeline Integration <span class="ui label green"><i class="percent icon"></i> 100 Rational</span><a class="anchor" id="types"></a></h2>
+  			<div class="ui segment" style="font-weight: 300;">
+  				<p>Make sure you have <b>Timeline v7.2</b> or later, in order to support Firebase Login System.</p>
+  				<p>Now, go to Firebase Project' dashboard, click on the gear (setting) icon, click <b>Project Settings</b>, go to <b>Service accounts tab</b></p>
+  				<img src="/img/firebase/service.png" width="900px">
+  				<p>Scroll down, click on <b>Generate new private key</b> button</p>
+  				<img src="/img/firebase/key.png">
+  				<p>You will receive a popup, click on <b>Generate Key</b>. A json file will download.</p>
+  				<img src="/img/firebase/genkey.png">
+  				<p>Rename the json file to <label class="ui label">FirebaseCredential.json</label></p>
+  				<p>Now, move the <b>FirebaseCredential.json</b> file to <label class="ui label">Desktop/Timeline-master/configs/</label> folder</p>
+  				<div class="ui info message" style="font-weight: 500;">
+			  		<i class="lightbulb outline icon"></i> In here, <b>Desktop/Timeline-master</b> is where you have Timeline downloaded.
+			  	</div>
+			  	<p>You will have something similar to this</p>
+			  	<img src="/img/firebase/json.png">
+			  	<br>
+			  	<p>You are done with Timeline setup. <b>Make sure you have installed <label class="ui label">firebase-admin</label> python module (<label class="ui label">pip install firebase-admin</label>)</b></p>
+  			</div>
+
+			
+		</div>
+		<div class="ui basic segment container" id="TimeFlex" style="font-weight: 300;">
+			<h2 class="ui dividing header section-beg">Setting TimeFlex <span class="ui label green"><i class="meh outline icon"></i> Setup-free</span><a class="anchor" id="types"></a></h2>
+			<div class="ui segment" style="font-weight: 300;">
+				<p>First, <b>install required python modules</b></p>
+				<div class="ui segment inverted grey" style="font-weight: 350;">
+			  		<i class="dollar sign icon"></i> pip install flask flask-sqlalchemy flask-caching flask-limiter flask-cors flask-session bcrypt redis firebase-admin
+			  	</div>
+			  	<p>Good, now <b>download TimeFlex webserver</b></p>
+			  	<div class="ui styled fluid accordion">
+					  <div class="title">
+					    <i class="dropdown icon"></i>
+					    UNIX - Linux, Ubuntu, Debain
+					  </div>
+					  <div class="content">
+					  	<p>Run the following commands</p>
+					  	
+					  	<div class="ui segment attached inverted grey" style="font-weight: 350; border: none; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+					  		<i class="dollar sign icon"></i>  wget "https://github.com/Times-0/TimeFlex/archive/master.zip" <br>
+ 							<i class="dollar sign icon"></i> apt-get install unzip <br>
+ 							<i class="dollar sign icon"></i> unzip master.zip -d /sources/ <br>
+ 							<i class="dollar sign icon"></i> cd /sources/TimeFlex-master/
+					  	</div>
+
+					  </div>
+
+					  <div class="title">
+					  	<i class="dropdown icon"></i>
+					  		Windows & MacOS
+					  </div>
+					  <div class="content">
+					  	<p><a class="ui button inverted green" href="https://github.com/Times-0/TimeFlex/archive/master.zip" target="_blank">Download TimeFlex.zip</a></p>
+					  	<p>Now, extract the contents into an easily accessible directory (eg. Desktop)</p>
+					  	<div class="ui message info">
+					  		<b class="ui header">Note</b> <p>This docs assume TimeFlex is located on your Desktop, represented as Desktop/TimeFlex-master</p>
+					  	</div>
+					  </div>
+					</div>
+					  <br>
+					  <p>Open <label class="ui label">Database.py</label> inside TimeFlex-master folder. Edit your mysql configurations, and save the file.</p>
+					  <p>Open <label class="ui label">Flex.py</label>, find the following</p>
+					  <div class="ui segment inverted grey" style="font-weight: 400;">
+<pre>CORS(app, supports_credentials=True, origins=['play.localhost', 'localhost'])</pre>
+					  </div>
+					  <p>replace <label class="ui label">localhost</label>, or add your own domains through which you are going to send request to TimeFlex.</p>
+					  <p><b>Tip?</b> Just change <label class="ui label">localhost</label> to your domain name like <label class="ui label">mycpps.pw</label></p>
+
+					  <p>Now one <b>IMPORTANT</b> stuff to do - <b>FirebaseCredential.json</b>, copy the same <label class="ui label">FirebaseCredential.json</label> you have downloaded in previous topic, that you have placed in Timeline-master/configs, and place the file in <B>TimeFlex/config</B>. So you would have something like</p>
+					  <img src="/img/firebase/jsonagain.png">
+
+					  <p>Now, all that's left to do is <b>Run TimeFlex</b></p>
+					  <p>To do that, execute the following command</p>
+					  <div class="ui segment brown attached inverted" style="font-weight: 350; border: none; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+					  	<i class="dollar sign icon"></i> cd Desktop/TimeFlex-master/ <br>
+					  	<i class="dollar sign icon"></i> python Flex.py
+					  </div>
+					  <div class="ui message info attached bottom" style="font-weight: 400;">
+					  		<b class="ui header">Note</b> <label class="ui label">Desktop/TimeFlex-master</label> is where you have downloaded TimeFlex, use <label class="ui label">/sources/TimeFlex-master/</label> instead for Ubuntu
+					  	</div>
+					  <br>	
+					  <p><b>YaYYYY! all done</b> now you can just visit <a href="//play.localhost/">play.localhost</a> or <a href="//play.mycpps.pw">play.mycpps.pw</a> and enjoy the brand new login system</p>
+			</div>
+			<div class="section-end"></div>
+		</div>
+		<div class="ui basic segment container" id="Screenshot">
+  		<h2 class="ui dividing header section-beg">Preview<span class="ui label green"><i class="percent icon"></i> 100 Rational</span><a class="anchor" id="types"></a></h2>
+  			<div class="ui segment" style="font-weight: 300;">
+  				<p>Below is a look at the login system</p>
+  				<img src="/img/firebase/peek1.png" width="100%">
+  				<img src="/img/firebase/peek2.png" width="100%">
+  				<img src="/img/firebase/peek3.png" width="100%">
+  			</div>
+  		</div>
+		<div class="ui clearing basic segment blue">
+		  <a class="ui right floated button disabled" href="/docs/rip.html">Hawking Radiation<i class="right angle icon divider"></i></a>
+		  <a class="ui left floated button" href="/docs/mediaserver.html"><i class="left angle icon divider"></i> Mediaserver</a>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(function (argument) {
+			$(".master-sticky").sticky({offset:140, observeChanges:true});
+			$('.ui.accordion').accordion();
+			$('.section-beg').sticky({zIndex: 1002,
+				onStick: function() {
+					$(".master-sticky").sticky('refresh');
+					var id = $(this).parent().attr('id');
+                    $('.master-sticky > .accordion').accordion('open', 2);
+                    var e = $($('.master-sticky > .accordion').find('.content.menu')[2]).find('a[href="#'+id+'"]');
+                    $($('.master-sticky > .accordion').find('.content.menu')[2]).find('a').removeClass('active'); e.addClass('active');
+					$(this).attr('style', 'z-index: 1001; left: 50%; color: white; top: 35px; position: fixed;');
+				},
+				onUnstick: function() {
+					$(".master-sticky").sticky('refresh');
+					var id = $(this).parent().attr('id');
+                    $('.master-sticky > .accordion').accordion('open', 2);
+                    var e = $($('.master-sticky > .accordion').find('.content.menu')[2]).find('a[href="#'+id+'"]');
+                    $($('.master-sticky > .accordion').find('.content.menu')[2]).find('a').removeClass('active'); e.addClass('active');
+					$(this).attr('style', ''); 
+				}, observeChanges: true,
+				offset: 35
+			});
+            $($('.master-sticky > .accordion').find('.content.menu')[2]).find('a').on('click', function(){$('.section-beg').visibility('refresh')});
+            setInterval(function(){$(".section-beg").sticky('refresh');;}, 1000);
+			
+		});
+	</script>
+
+</body>
+</html>
