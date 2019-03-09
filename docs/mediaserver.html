@@ -184,6 +184,7 @@
 						<a class="item" href="#AS3">AS3</a>
 						<a class="item" href="#AS2">AS2</a>
 						<a class="item" href="#Friends">Friends</a>
+						<a class="item" href="#ServerJump">Server Jumping</a>
 					</div>
 				</div>
 				<div class="item">
@@ -697,6 +698,68 @@ $(document).ready( function () {
   			
 
 			<div class="section-end"></div>
+		</div>
+		<div class="ui basic segment container" id="ServerJump">
+  		<h2 class="ui dividing header section-beg">Server Jumping<span class="ui label green"><i class="check icon"></i> Autism-free</span><a class="anchor" id="types"></a></h2>
+			<div class="ui raised segment blue" style="font-weight: 300;">
+				<div class="ui header">Note</div>
+			  <p>This is tested and found working only on <b>AS3</b>. This is due to client limitations of AS2 Shell.</p>
+			  <p> <b>Timeline v7.3+</b> is required to support this feature.</p>
+			</div>
+			<div class="ui bottom attached warning message" style="top: -15px;">
+			  <i class="lightbulb outline icon"></i>
+			  This is a jump-free zone. You cannot skip once you are in.
+			</div>
+
+			<div class="ui segment" style="font-weight: 300;">
+				<p>Download required Client SWF, and edit dependencies.json</p>
+				<div class="ui styled fluid accordion">
+				  <div class="title">
+				    <i class="dropdown icon"></i>
+				    UNIX - Linux, Ubuntu, Debain
+				  </div>
+				  <div class="content">
+				  	<p>Run the following commands</p>
+				  	<div class="ui segment inverted grey" style="font-weight: 350;">
+				  		<i class="dollar sign icon"></i> wget "https://raw.githubusercontent.com/Times-0/times-0.github.io/master/jumpline.swf" -P /var/www/public_cpps/media1/play/v2/client/<br>
+				  		<i class="dollar sign icon"></i> sudo nano /var/www/public_cpps/media1/play/v2/client/dependencies.json
+				  	</div>				  	
+				  </div>
+				  <div class="title">
+				    <i class="dropdown icon"></i>
+				    Windows &amp; MacOS
+				  </div>
+				  <div class="content">
+				  	<p>Download the following .swf file and place it on <span class="ui label">Xampp/htdocs/media1/play/v2/client/</span>.</p>
+				    <p><a href="https://raw.githubusercontent.com/Times-0/times-0.github.io/master/jumpline.swf" class="ui button inverted green">Download jumpline.swf</a></p>
+				    <p> Then open <label class="ui label">Xampp/htdocs/media1/play/v2/client/dependencies.json</label> in a text editor to edit the file.</p>
+				  </div>
+				</div>
+				<br>
+				<p>In <label class="ui label">dependencies.json</label>, find the following</p>
+				<div class="ui segment inverted grey" style="font-weight: 400;">
+<pre>
+{
+	"id": "interface",
+	"title": "Interface"
+},
+</pre>
+				</div>
+				<p>Below that add</p>
+				<div class="ui segment inverted grey" style="font-weight: 400;">
+<pre>
+{
+	"id": "jumpline",
+	"title": "Server Jump"
+},
+</pre>
+				</div>
+				<p>It should look something similar to this,</p>
+				<img src="/img/serverjump.png">
+				<p>Save the file and exit, clear your caches :~)</p>
+				<p><b>All done!</b> You can start your game and enjoy Server Jumping. (<b>Note:</b> <i>You need Timeline v7.3+ to use this feature</i>)</p>
+			</div>
+			
 		</div>
 		<div class="ui clearing basic segment blue">
 		  <a class="ui right floated button" href="/docs/register-login.html">Register &amp; Login <i class="right angle icon divider"></i></a>
